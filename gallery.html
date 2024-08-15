@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Omicron Chapter - Alpha Kappa Alpha Sorority, Inc.</title>
+    <link rel="icon" href="logos/Alpha_Kappa_Alpha_shield_white.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href='https://aka1908.com' target='_blank'><img id='shield'
+                    src="logos/Alpha_Kappa_Alpha_shield_white.png" alt="Left Logo"></a>
+            <a href='https://www.instagram.com/aka_omicron?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
+                target='_blank'><img src="logos/omicron_logo_white.png" alt="Right Logo"></a>
+        </div>
+    </header>
+    <div class="navbar">
+        <a href="index.html">President's Letter</a>
+        <a href="about.html">About AKA</a>
+        <a href="programs.html">Programs</a>
+        <a href="programs.html">National Programs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="members.html">Current Members</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-row">
+            <div class="gallery-text">
+                <h3>Scholarship</h3>
+                <p>Our commitment to academic excellence and supporting the educational aspirations of our members.</p>
+            </div>
+            <div class="carousel-container">
+                <img src="images/scholarship1.jpg" alt="Scholarship 1" class="carousel-image active">
+                <img src="images/scholarship2.jpg" alt="Scholarship 2" class="carousel-image">
+                <img src="images/scholarship3.jpg" alt="Scholarship 3" class="carousel-image">
+                <button class="carousel-button prev" onclick="moveCarousel(0, -1)">&#10094;</button>
+                <button class="carousel-button next" onclick="moveCarousel(0, 1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="gallery-row reverse">
+            <div class="gallery-text">
+                <h3>Sisterhood</h3>
+                <p>Fostering lifelong bonds and a supportive network among our members.</p>
+            </div>
+            <div class="carousel-container">
+                <img src="images/sisterhood1.jpg" alt="Sisterhood 1" class="carousel-image active">
+                <img src="images/sisterhood2.jpg" alt="Sisterhood 2" class="carousel-image">
+                <img src="images/sisterhood3.jpg" alt="Sisterhood 3" class="carousel-image">
+                <button class="carousel-button prev" onclick="moveCarousel(1, -1)">&#10094;</button>
+                <button class="carousel-button next" onclick="moveCarousel(1, 1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gallery-text">
+                <h3>Service</h3>
+                <p>Dedicated to impactful community service and making a difference in our communities.</p>
+            </div>
+            <div class="carousel-container">
+                <img src="images/service1.jpg" alt="Service 1" class="carousel-image active">
+                <img src="images/service2.jpg" alt="Service 2" class="carousel-image">
+                <img src="images/service3.jpg" alt="Service 3" class="carousel-image">
+                <button class="carousel-button prev" onclick="moveCarousel(2, -1)">&#10094;</button>
+                <button class="carousel-button next" onclick="moveCarousel(2, 1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AKA Omicron. All rights reserved. <br>
+        Last Updated: 08/31/2024 <br>
+        DISCLAIMER: Alpha Kappa Alpha Sorority, Inc. is not responsible for the design and content of these web pages. <br> They are the sole property and responsibility of the Omicron Chapter who hosts and maintains this website. </p>
+    </footer>
+    <script src="scripts/fade.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+
+</html>
